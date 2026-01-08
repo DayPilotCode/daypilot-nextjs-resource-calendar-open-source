@@ -17,7 +17,7 @@ export default function ResourceCalendar() {
 
     const [events, setEvents] = useState<DayPilot.EventData[]>([]);
     const [columns, setColumns] = useState<ColumnData[]>([]);
-    const [startDate, setStartDate] = useState<string|DayPilot.Date>("2025-11-04");
+    const [startDate, setStartDate] = useState<string|DayPilot.Date>("2026-11-04");
 
     const styles = {
         wrap: {
@@ -267,8 +267,8 @@ export default function ResourceCalendar() {
             {
                 id: 1,
                 text: "Task 1",
-                start: "2025-11-04T10:30:00",
-                end: "2025-11-04T16:00:00",
+                start: "2026-11-04T10:30:00",
+                end: "2026-11-04T16:00:00",
                 resource: "R1",
                 tags: {
                     progress: 60,
@@ -277,8 +277,8 @@ export default function ResourceCalendar() {
             {
                 id: 2,
                 text: "Task 2",
-                start: "2025-11-04T09:30:00",
-                end: "2025-11-04T11:30:00",
+                start: "2026-11-04T09:30:00",
+                end: "2026-11-04T11:30:00",
                 resource: "R2",
                 tags: {
                     color: "#6aa84f",
@@ -288,8 +288,8 @@ export default function ResourceCalendar() {
             {
                 id: 3,
                 text: "Task 3",
-                start: "2025-11-04T12:00:00",
-                end: "2025-11-04T15:00:00",
+                start: "2026-11-04T12:00:00",
+                end: "2026-11-04T15:00:00",
                 resource: "R2",
                 tags: {
                     color: "#f1c232",
@@ -299,8 +299,8 @@ export default function ResourceCalendar() {
             {
                 id: 4,
                 text: "Task 4",
-                start: "2025-11-04T11:30:00",
-                end: "2025-11-04T14:30:00",
+                start: "2026-11-04T11:30:00",
+                end: "2026-11-04T14:30:00",
                 resource: "R3",
                 tags: {
                     color: "#e69138",
@@ -311,7 +311,7 @@ export default function ResourceCalendar() {
 
         setEvents(events);
 
-        datePicker?.select("2025-11-04");
+        datePicker?.select("2026-11-04");
 
     }, [calendar, datePicker]);
 
@@ -354,7 +354,7 @@ export default function ResourceCalendar() {
                     skipMonths={3}
                     onTimeRangeSelected={args => setStartDate(args.start)}
                     controlRef={setDatePicker}
-                    />
+                />
             </div>
             <div style={styles.main}>
                 <div className={"toolbar"}>

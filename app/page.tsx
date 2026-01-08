@@ -1,9 +1,9 @@
-import ResourceCalendar from "@/app/resourceCalendar";
+import Calendar from "@/app/calendar/Calendar";
 
 export default function Home() {
   return (
       <div>
-        <ResourceCalendar/>
+        <Calendar/>
       </div>
   )
 }
